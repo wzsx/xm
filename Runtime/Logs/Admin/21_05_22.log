@@ -1,0 +1,975 @@
+[ 2021-05-22T17:23:20+08:00 ] 115.60.62.31 /index.php/Admin/Jzx/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='208' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0018s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `c_users` [ RunTime:0.0017s ]
+SQL: SELECT `isleader` FROM `c_users` WHERE ( id=208 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_auth_group` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `c_auth_group`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `c_case_jzx` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `c_case_jzx` WHERE `uid` = 208 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [2048] Only variables should be passed by reference C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Think\Db\Driver.class.php 第 769 行.
+SQL: SELECT * FROM `c_case_jzx` WHERE `uid` = 208 ORDER BY `time` desc LIMIT 0,100   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0017s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_pro_info` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6525 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_zp_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6525 )  [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6521 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6521 )  [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6514 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6514 )  [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6457 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6457 )  [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6455 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6455 )  [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6442 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6442 )  [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6429 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6429 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6428 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6428 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6426 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6426 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6407 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6407 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6381 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6381 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6375 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6375 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6356 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6356 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6328 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6328 )  [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6327 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6327 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6326 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6326 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6325 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6325 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6324 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6324 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6323 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6323 )  [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6322 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6322 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6321 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6321 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6320 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6320 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6319 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6319 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6238 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6238 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6172 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6172 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6156 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6156 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6155 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6155 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6154 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6154 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6140 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6140 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6139 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6139 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6135 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6135 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6111 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6111 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6078 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6078 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6068 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6068 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6049 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6049 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6037 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6037 )  [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6024 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6024 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6020 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6020 )  [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6015 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6015 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5991 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5991 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5978 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5978 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5971 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5971 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5966 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5966 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5965 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5965 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5960 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5960 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058864s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002030s ]
+
+[ 2021-05-22T17:23:23+08:00 ] 115.60.62.31 /index.php/Admin/Jzx/add_case
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001929s ]
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='208' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `c_tree` WHERE `pid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000633s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001943s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001983s ]
+
+[ 2021-05-22T17:24:56+08:00 ] 115.60.62.31 /index.php/Admin/Jzx/add_case
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002193s ]
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0019s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='208' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0017s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0002s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0015s ]
+SQL: SELECT `group_id` FROM `c_auth_group_access` WHERE ( uid=208 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: pro_info C:\wwwroot\oa.52lvu.cn\Application\Admin\Controller\JzxController.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `c_case_jzx` [ RunTime:0.0017s ]
+SQL: INSERT INTO `c_case_jzx` (`name`,`phone`,`sex`,`all_money`,`prepaid_money`,`collection_money`,`pay_order`,`order_type`,`address`,`content`,`write_name`,`write_wx`,`pid`,`uid`,`pro_info`,`time`) VALUES ('许海艳','13403265596','1','650','650','0','1','2','河北省保定市定兴县肖村乡石像村代捎','','刚明审','whe7007','11','208','','1621675496') [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `c_pro_info` [ RunTime:0.0017s ]
+SQL: INSERT INTO `c_pro_info` (`pro_info`,`num`,`guige`,`ord_id`) VALUES ('清咽散','1','盒','6535') [ RunTime:0.0019s ]
+SQL: INSERT INTO `c_pro_info` (`pro_info`,`num`,`guige`,`ord_id`) VALUES ('舒咽贴','1','盒','6535') [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `c_zp_info` [ RunTime:0.0015s ]
+SQL: INSERT INTO `c_zp_info` (`zp_info`,`num`,`guige`,`ord_id`) VALUES ('','','盒','6535') [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: id C:\wwwroot\oa.52lvu.cn\Application\Admin\Controller\JzxController.class.php 第 173 行.
+SQL: SHOW COLUMNS FROM `c_log` [ RunTime:0.0029s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wwwroot\oa.52lvu.cn\Application\Common\Common\function.php 第 1497 行.
+SQL: SHOW COLUMNS FROM `c_users` [ RunTime:0.0015s ]
+SQL: SELECT `username` FROM `c_users` WHERE `id` = 208 LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `c_log` (`name`,`t`,`ip`,`log`) VALUES ('刚明审','1621675496','115.60.62.31','添加订单ID：') [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002048s ]
+
+[ 2021-05-22T17:24:59+08:00 ] 115.60.62.31 /index.php/Admin/Jzx/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001993s ]
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='208' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0017s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `c_users` [ RunTime:0.0017s ]
+SQL: SELECT `isleader` FROM `c_users` WHERE ( id=208 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_auth_group` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title` FROM `c_auth_group`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `c_case_jzx` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `c_case_jzx` WHERE `uid` = 208 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [2048] Only variables should be passed by reference C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Think\Db\Driver.class.php 第 769 行.
+SQL: SELECT * FROM `c_case_jzx` WHERE `uid` = 208 ORDER BY `time` desc LIMIT 0,100   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0017s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_pro_info` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6535 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `c_zp_info` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6535 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6525 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6525 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6521 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6521 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6514 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6514 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6457 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6457 )  [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6455 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6455 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6442 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6442 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6429 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6429 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6428 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6428 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6426 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6426 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6407 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6407 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6381 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6381 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6375 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6375 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6356 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6356 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6328 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6328 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6327 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6327 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6326 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6326 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6325 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6325 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6324 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6324 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6323 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6323 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6322 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6322 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6321 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6321 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6320 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6320 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6319 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6319 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6238 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6238 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6172 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6172 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6156 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6156 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6155 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6155 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6154 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6154 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6140 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6140 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6139 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6139 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6135 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6135 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6111 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6111 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6078 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6078 )  [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6068 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6068 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6049 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6049 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6037 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6037 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6024 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6024 )  [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6020 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6020 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6015 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6015 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5991 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5991 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5978 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5978 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5971 )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5971 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5966 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5966 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5965 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5965 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=5960 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=5960 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002260s ]
+
+[ 2021-05-22T18:00:28+08:00 ] 115.60.62.31 /index.php/Admin/Jzx/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0024s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='211' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0025s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `c_users` [ RunTime:0.0018s ]
+SQL: SELECT `isleader` FROM `c_users` WHERE ( id=211 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_auth_group` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title` FROM `c_auth_group`  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `c_case_jzx` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `c_case_jzx` WHERE `uid` = 211 LIMIT 1   [ RunTime:0.0013s ]
+NOTIC: [2048] Only variables should be passed by reference C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Think\Db\Driver.class.php 第 769 行.
+SQL: SELECT * FROM `c_case_jzx` WHERE `uid` = 211 ORDER BY `time` desc LIMIT 0,100   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `c_pro_info` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6531 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `c_zp_info` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6531 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6530 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6530 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6529 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6529 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6528 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6528 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6492 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6492 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6480 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6480 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6479 )  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6479 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6478 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6478 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6477 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6477 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6440 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6440 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6439 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6439 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6409 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6409 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6365 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6365 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6352 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6352 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6351 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6351 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6340 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6340 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6268 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6268 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6265 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6265 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6262 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6262 )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6257 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6257 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6255 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6255 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6253 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6253 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6250 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6250 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6246 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6246 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6176 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6176 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6169 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6169 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6076 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6076 )  [ RunTime:0.0005s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6065 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6065 )  [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=6063 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=6063 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002424s ]
+

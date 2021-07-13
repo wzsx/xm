@@ -1,0 +1,109 @@
+<html>
+    
+    <head>
+    </head>
+    
+    <body>
+        <extend name="Public:base" />
+        <block name="title">
+            添加订单
+        </block>
+        <block name="css">
+            <icheckcss />
+        </block>
+        <block name="content">
+            <div class="page-header">
+                <h1>
+                    <i class="fa fa-home">
+                    </i>
+                    首页 &gt; 订单管理 &gt; 添加订单
+                </h1>
+            </div>
+            <div class="col-xs-12">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab">
+                        <li>
+                            <a href="{:U('Admin/Jzx/index')}">
+                                订单列表
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="{:U('Admin/Jzx/add_case')}">
+                                添加订单
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <form class="form-inline" method="post" action="{:U('Admin/Jzx/edit_case')}">
+                            <input type="hidden" name="id" value="{$data.id}"></input>
+                       
+                            <table class="table table-striped table-bordered table-hover table-condensed">
+                                <tbody>
+                                    <tr>
+                                        <th class="center">
+                                            基本信息
+                                        </th>
+                                        <td>
+                                            收货姓名&nbsp;&nbsp;&nbsp;
+                                            <input class="input-medium" type="text" name="name" value="{$data.name}" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                            收货电话&nbsp;&nbsp;
+                                            <input class="input-medium" type="text" name="phone" value="{$data.phone}" />&nbsp;&nbsp;
+                                             <span class="inputword">
+                                                男
+                                            </span>
+                                            <input class="xb-icheck" type="radio" name="sex" value="1" <eq name="data['sex']" value="1"> checked="checked"
+                                            </eq> >
+                                            <span class="inputword">
+                                                女
+                                            </span>
+                                            <input class="xb-icheck" type="radio" name="sex" value="2" <eq name="data['sex']" value="2"> checked="checked"
+                                            </eq> >
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th class="center">
+                                            订单信息
+                                        </th>
+                                        <td>
+                                            产品信息&nbsp;&nbsp;&nbsp;
+                                            <input class="input-medium" type="text" name="pro_info" value="{$data.pro_info}" style="width:320px;" /><br/><br/>
+                                            收货地址&nbsp;&nbsp;&nbsp;
+                                            <input class="input-medium" type="text" name="address" value="{$data.address}" style="width:320px;" /><br/><br/>
+                                            备注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <textarea cols="150" rows="10" wrap="hard" name="content">
+                                                {$data.content}
+                                            </textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <th class="center">
+                                            其他&nbsp;&nbsp;&nbsp;
+                                        </th>
+                                        <td>
+                                            记录人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input class="input-medium" type="text" name="write_name" value="{$data.write_name}" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <td>
+                                            <input class="btn btn-success" type="submit" value="添加" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </block>
+        <block name="js">
+            <icheckjs color="blue" />
+        </block>
+    </body>
+
+</html>

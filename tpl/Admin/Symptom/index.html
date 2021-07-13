@@ -1,0 +1,291 @@
+<extend name="Public:base" />
+<block name="title">
+    用户组管理
+</block>
+<block name="content">
+    <div class="page-header">
+        <h1>
+            首页 &gt; 医生分科管理
+        </h1>
+    </div>
+    <div class="col-xs-12">
+        <div class="tabbable">
+            <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab">
+                <li class="active">
+                    <a href="#home" data-toggle="tab">
+                        症状管理
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" onclick="add()">
+                        添加问诊症状
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" onclick="add_tcm()">
+                        添加中医症状
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" onclick="add_western()">
+                        添加西医症状
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" onclick="add_video_doc()">
+                        添加视频医生
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" onclick="add_video_reason()">
+                        添加视频原因
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <table class="table table-striped table-bordered table-hover table-condensed">
+                    <tr>
+                        <th>
+                            科室名称
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                    <foreach name="data" item="v">
+                        <tr>
+                            <td>
+                                {$v['title']}
+                            </td>
+                            <td>
+                                <a href="{:U('Admin/Symptom/symptoms_assignment',array('id'=>$v['id']))}">
+                                    信息模板创建
+                                </a>
+                            </td>
+                        </tr>
+                    </foreach>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        添加症状
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="bjy-form" class="form-inline" action="{:U('Admin/Symptom/add_symptoms')}"
+                    method="post">
+                        <table class="table table-striped table-bordered table-hover table-condensed">
+                            <tr>
+                                <th width="15%">
+                                    问诊症状名称：
+                                </th>
+                                <td>
+                                    <input class="input-medium" type="text" name="title">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                </th>
+                                <td>
+                                    <input class="btn btn-success" type="submit" value="添加">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="add-tcm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        添加症状
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="bjy-form" class="form-inline" action="{:U('Admin/Symptom/add_symptoms_tcm')}"
+                    method="post">
+                        <table class="table table-striped table-bordered table-hover table-condensed">
+                            <tr>
+                                <th width="15%">
+                                    中医症状名称：
+                                </th>
+                                <td>
+                                    <input class="input-medium" type="text" name="title">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                </th>
+                                <td>
+                                    <input class="btn btn-success" type="submit" value="添加">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="add-western" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        添加症状
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="bjy-form" class="form-inline" action="{:U('Admin/Symptom/add_symptoms_western')}"
+                    method="post">
+                        <table class="table table-striped table-bordered table-hover table-condensed">
+                            <tr>
+                                <th width="15%">
+                                    西医症状名称：
+                                </th>
+                                <td>
+                                    <input class="input-medium" type="text" name="title">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                </th>
+                                <td>
+                                    <input class="btn btn-success" type="submit" value="添加">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="add-video_doc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        添加视频医生
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="bjy-form" class="form-inline" action="{:U('Admin/Symptom/add_video_doc')}"
+                    method="post">
+                        <table class="table table-striped table-bordered table-hover table-condensed">
+                            <tr>
+                                <th width="15%">
+                                    视频医生名称：
+                                </th>
+                                <td>
+                                    <input class="input-medium" type="text" name="title">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                </th>
+                                <td>
+                                    <input class="btn btn-success" type="submit" value="添加">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="add-video_reason" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        添加视频原因
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form id="bjy-form" class="form-inline" action="{:U('Admin/Symptom/add_video_reason')}"
+                    method="post">
+                        <table class="table table-striped table-bordered table-hover table-condensed">
+                            <tr>
+                                <th width="15%">
+                                    视频原因名称：
+                                </th>
+                                <td>
+                                    <input class="input-medium" type="text" name="title">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                </th>
+                                <td>
+                                    <input class="btn btn-success" type="submit" value="添加">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <script>
+        // 添加问诊症状
+        function add() {
+            $("input[name='title']").val('');
+            $('#add').modal('show');
+        }
+        // 添加中医症状
+        function add_tcm() {
+            $("input[name='title']").val('');
+            $('#add-tcm').modal('show');
+        }
+        // 添加西医症状
+        function add_western() {
+            $("input[name='title']").val('');
+            $('#add-western').modal('show');
+        }
+        // 添加视频医生
+        function add_video_doc() {
+            $("input[name='title']").val('');
+            $('#add-video_doc').modal('show');
+        }
+        // 添加视频原因
+        function add_video_reason() {
+            $("input[name='title']").val('');
+            $('#add-video_reason').modal('show');
+        }
+        // 修改菜单
+        function edit(obj) {
+            var ruleId = $(obj).attr('ruleId');
+            var ruletitle = $(obj).attr('ruletitle');
+            $("input[name='id']").val(ruleId);
+            $("input[name='title']").val(ruletitle);
+            $('#bjy-edit').modal('show');
+        }
+    </script>
+</block>

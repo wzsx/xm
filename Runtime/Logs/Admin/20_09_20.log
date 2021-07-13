@@ -1,0 +1,160 @@
+[ 2020-09-20T20:12:44+08:00 ] 113.96.232.119 /index.php/Admin/Jzx/edit_case/id/3744
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Controller\AdminBaseController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','150','152','156','162','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `c_case_jzx` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_case_jzx` WHERE ( id=3744 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=602 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `c_tree` WHERE `pid` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_pro_info` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=3744 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_zp_info` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=3744 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Runtime\Cache\Admin\803cfdbf243874f2fcdf65b8a89aa269.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2020-09-20T20:13:00+08:00 ] 106.34.108.142 /index.php/Admin/Jzx/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='174' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0000s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','150','152','156','162','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_users` [ RunTime:0.0000s ]
+SQL: SELECT `isleader` FROM `c_users` WHERE ( id=174 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_auth_group` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `c_auth_group`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined variable: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 141 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+NOTIC: [8] Undefined index: pid C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Vendor\Tree.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `c_case_jzx` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `c_case_jzx` WHERE `uid` = 174 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2048] Only variables should be passed by reference C:\wwwroot\oa.52lvu.cn\ThinkPHP\Library\Think\Db\Driver.class.php 第 769 行.
+SQL: SELECT * FROM `c_case_jzx` WHERE `uid` = 174 ORDER BY `time` desc LIMIT 0,100   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=61 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=602 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `c_pro_info` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=3744 )  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `c_zp_info` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=3744 )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=204 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=1715 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=3706 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=3706 )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=383 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=3236 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=3609 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=3609 )  [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=15 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=217 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=1817 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=3568 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=3568 )  [ RunTime:0.0156s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=71 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `name` FROM `c_tree` WHERE ( id=660 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_pro_info` WHERE ( ord_id=3519 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `c_zp_info` WHERE ( ord_id=3519 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

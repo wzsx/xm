@@ -1,0 +1,39 @@
+[ 2021-05-01T14:52:36+08:00 ] 101.132.144.145 /index.php/Admin/Jzx/add_case
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002380s ]
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Controller\AdminBaseController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `c_auth_group_access` [ RunTime:0.0043s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM c_auth_group_access a INNER JOIN c_auth_group g on a.group_id=g.id  WHERE ( a.uid='' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `c_auth_rule` [ RunTime:0.0026s ]
+SQL: SELECT `condition`,`name` FROM `c_auth_rule` WHERE `id` IN ('6','96','137','147','148','149','159','157','158') AND `type` = 1 AND `status` = 1  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Common\Model\AdminNavModel::getTreeData() should be compatible with that of Common\Model\BaseModel::getTreeData() C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `c_admin_nav` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `c_admin_nav` ORDER BY order_number is null,`order_number`,`id`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 45 行.
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Application\Common\Model\AdminNavModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `c_tree` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `c_tree` WHERE `pid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000455s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000596s ]
+NOTIC: [8] Undefined index: user C:\wwwroot\oa.52lvu.cn\Runtime\Cache\Admin\ea1da546275d5c90d44f26e2a75ce7f2.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002958s ]
+

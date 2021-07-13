@@ -1,0 +1,65 @@
+<extend name="Public:base" />
+<block name="title">
+    分配医生
+</block>
+<block name="css">
+    <icheckcss/>
+</block>
+<block name="content">
+    <div class="page-header">
+        <h1>
+            <i class="fa fa-home">
+            </i>
+            首页 &gt; 后台管理 &gt; 分配医生
+        </h1>
+    </div>
+    <div class="col-xs-12">
+        <div class="tabbable">
+            <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab">
+                <li>
+                    <a href="{:U('Admin/Symptom/doctor_assignment_list')}">
+                        科室列表
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        分配医生
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <form class="form-inline" method="post">
+                    <input type="hidden" name="id" value="{$user_data['id']}">
+                    <table class="table table-striped table-bordered table-hover table-condensed">
+                        <tr>
+                            <th>
+                                {$doctor_data['title']}
+                            </th>
+                            <td>
+                                <foreach name="data" item="v">
+                                    {$v['name']}
+                                    <input class="xb-icheck" type="checkbox" name="group_ids[]" value="{$v['id']}"
+                                    <in name="v['id']" value="$doctor_data['doctor_id']">
+                                    checked="checked"
+                                    </in>
+                                    > &emsp;
+                                </foreach>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                            </th>
+                            <td>
+                                <input class="btn btn-success" type="submit" value="修改">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <icheckjs color="blue" />
+</block>

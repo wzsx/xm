@@ -1,0 +1,268 @@
+<html>
+    
+    <head>
+    </head>
+    
+    <body>
+        <extend name="Public:base" />
+        <block name="title">
+            添加病例
+        </block>
+        <block name="css">
+            <icheckcss />
+        </block>
+        <block name="content">
+            <div class="page-header">
+                <h1>
+                    <i class="fa fa-home">
+                    </i>
+                    首页 &gt; 病例管理 &gt; 添加病例
+                </h1>
+            </div>
+            <div class="col-xs-12">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab">
+                        <li>
+                            <a href="{:U('Admin/Case/index')}">
+                                病例列表
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="{:U('Admin/Case/add_case')}">
+                                添加病例
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <form class="form-inline" method="post">
+                            <table class="table table-striped table-bordered table-hover table-condensed">
+                                <tbody>
+                                    <tr>
+                                        <th class="center">
+                                            基本信息
+                                        </th>
+                                        <td>
+                                            <input class="input-medium" type="text" name="name" placeholder="姓名" value="" />
+                                            <input class="input-medium" type="text" name="age" placeholder="年龄" value="" />&nbsp;&nbsp;
+                                            <span class="inputword">
+                                                男
+                                            </span>
+                                            <input class="xb-icheck" type="radio" name="sex" value="1" checked="checked" />
+                                            <span class="inputword">
+                                                女
+                                            </span>
+                                            <input class="xb-icheck" type="radio" name="sex" value="2" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="center">
+                                            问诊
+                                        </th>
+                                        <td>
+                                            颈部憋闷&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="jbbm" value="1"/>
+                                            头身困重&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="tskz" value="1"/>
+                                            情绪抑郁&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="qxyy" value="1"/>
+                                            大便干燥&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="dbgz" value="1"/>
+                                            胸勒胀痛&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="xlzt" value="1"/>
+                                            功能正常&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="gnzc" value="1"/>
+                                            畏寒肢冷&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="whzl" value="1"/>
+                                            饭后腹胀&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="fhfz" value="1"/>
+                                            手术治疗&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="sszl" value="1"/><br/><br/><br/>
+                                            打嗝反酸&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="dgfs" value="1"/>
+                                            伴有钙化&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="bygh" value="1"/>
+                                            形态规则&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="xtgz" value="1"/>
+                                            边界清晰&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="bjqx" value="1"/>
+                                            多梦易醒&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="dmyx" value="1"/>
+                                            夜尿频多&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="ynpd" value="1"/>
+                                            腰膝酸软&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="yxsr" value="1"/>
+                                            潮热盗汗&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="crdh" value="1"/>
+                                            烦躁易怒&nbsp;&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="fzyn" value="1"/><br/><br/><br/>
+                                            多发性结节&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="dfxjj" value="1"/>
+                                            纵横比大于1&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="zhb" value="1"/>
+                                            伴有血流信号&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="xlxh" value="1"/>
+                                            低回声结节&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="dhs" value="1"/>
+                                            颈部肿胀疼痛&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="jztt" value="1"/>
+                                            咽口异物感&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="ykyw" value="1"/>
+                                            囊实性&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="nsx" value="1"/>
+                                            有痰&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="yt" value="1"/>
+                                            乏力&nbsp;
+                                            <input class="xb-icheck" type="checkbox" name="fl" value="1"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="center">
+                                            中医检查
+                                        </th>
+                                        <td>
+                                            颈部肿胀&nbsp;&nbsp;
+                                            <select name="jbzz">
+                                                <option value="1">好转</option>
+                                                <option value="2">有效</option>
+                                                <option value="3">痊愈</option>
+                                                <option value="4">无效</option>
+                                            </select>
+                                            咽部异物感&nbsp;&nbsp;
+                                            <select name="ybyw">
+                                                <option value="1">好转</option>
+                                                <option value="2">有效</option>
+                                                <option value="3">痊愈</option>
+                                                <option value="4">无效</option>
+                                            </select>
+                                            口干咽疼&nbsp;&nbsp;
+                                            <select name="kgyt">
+                                                <option value="1">好转</option>
+                                                <option value="2">有效</option>
+                                                <option value="3">痊愈</option>
+                                                <option value="4">无效</option>
+                                            </select>
+                                            四肢不温&nbsp;&nbsp;
+                                            <select name="szbw">
+                                                <option value="1">好转</option>
+                                                <option value="2">有效</option>
+                                                <option value="3">痊愈</option>
+                                                <option value="4">无效</option>
+                                            </select>
+                                            情志异常&nbsp;&nbsp;
+                                            <select name="qzyc">
+                                                <option value="1">好转</option>
+                                                <option value="2">有效</option>
+                                                <option value="3">痊愈</option>
+                                                <option value="4">无效</option>
+                                            </select>
+                                            脾虚虚弱&nbsp;&nbsp;
+                                            <select name="pxxr">
+                                                <option value="1">好转</option>
+                                                <option value="2">有效</option>
+                                                <option value="3">痊愈</option>
+                                                <option value="4">无效</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="center">
+                                            西医检查
+                                        </th>
+                                        <td>
+                                            甲状腺结节大小&nbsp;&nbsp;
+                                            <select name="jjdx">
+                                                <option value="1">变小</option>
+                                                <option value="2">未改变</option>
+                                                <option value="3">变大</option>
+                                            </select>
+                                            甲状腺结节回声性质&nbsp;&nbsp;
+                                            <select name="hsxz">
+                                                <option value="1">变小</option>
+                                                <option value="2">未改变</option>
+                                                <option value="3">变大</option>
+                                            </select>
+                                            甲状腺结节评级&nbsp;&nbsp;
+                                            <select name="jjpj">
+                                                <option value="1">变小</option>
+                                                <option value="2">未改变</option>
+                                                <option value="3">变大</option>
+                                            </select>
+                                            结节血流供应&nbsp;&nbsp;
+                                            <select name="xlgy">
+                                                <option value="1">变小</option>
+                                                <option value="2">未改变</option>
+                                                <option value="3">变大</option>
+                                            </select>
+                                            淋巴结肿大&nbsp;&nbsp;
+                                            <select name="lbzd">
+                                                <option value="1">变小</option>
+                                                <option value="2">未改变</option>
+                                                <option value="3">变大</option>
+                                            </select>
+                                            淋巴结结节&nbsp;&nbsp;
+                                            <select name="lbjj">
+                                                <option value="1">变小</option>
+                                                <option value="2">未改变</option>
+                                                <option value="3">变大</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="center">
+                                            视频记录
+                                        </th>
+                                        <td>
+                                        <input class="input-medium" type="text" name="video_time" placeholder="视频日期(20190101)" value="" />
+                                            视频大夫&nbsp;&nbsp;
+                                            <select name="video_doc">
+                                                <option value="1">刘利欣</option>
+                                                <option value="2">周旭</option>
+                                                <option value="3">陈号召</option>
+                                                <option value="4">张艳辉</option>
+                                                <option value="5">张姝</option>
+                                                <option value="6">王铃清</option>
+                                            </select>
+                                            视频原因&nbsp;&nbsp;
+                                            <select name="video_reason">
+                                                <option value="1">过敏</option>
+                                                <option value="2">咽喉不适</option>
+                                                <option value="3">口干口苦</option>
+                                                <option value="4">失眠</option>
+                                                <option value="5">转介绍</option>
+                                                <option value="6">复杂问题</option>
+                                            </select>
+                                            视频结果&nbsp;&nbsp;
+                                            <select name="video_res">
+                                                <option value="1">中药</option>
+                                                <option value="2">中成药</option>
+                                            </select><br/><br/>
+											<input class="input-medium" type="text" name="fk_time" placeholder="反馈日期(20190101)" value="" />
+                                            反馈结果&nbsp;&nbsp;
+                                            <select name="fk_res">
+                                                <option value="1">缓解</option>
+                                                <option value="2">好转</option>
+                                                <option value="3">康复</option>
+                                                <option value="4">无效</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <td>
+                                            <input class="btn btn-success" type="submit" value="添加" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </block>
+        <block name="js">
+            <icheckjs color="blue" />
+        </block>
+    </body>
+
+</html>

@@ -1,0 +1,121 @@
+<extend name="Public:base" />
+<block name="title">
+    分配医生
+</block>
+<block name="css">
+    <icheckcss/>
+</block>
+<block name="content">
+    <div class="page-header">
+        <h1>
+            <i class="fa fa-home">
+            </i>
+            首页 &gt; 后台管理
+        </h1>
+    </div>
+    <div class="col-xs-12">
+        <div class="tabbable">
+            <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab">
+                <li>
+                    <a href="{:U('Admin/Symptom/index')}">
+                        症状管理
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <form class="form-inline" method="post">
+                    <table class="table table-striped table-bordered table-hover table-condensed">
+                        <tr>
+                            <th>
+                                {$symptoms_name['title']}-问诊症状
+                            </th>
+                            <td>
+                                <volist name="data" id="v" mod="7">
+                                    {$v['title']}
+                                    <input class="xb-icheck" type="checkbox" name="group_ids[]" value="{$v['id']}"
+                                    <in name="v['id']" value="$symptoms_data['symptoms_id']">
+                                    checked="checked"
+                                    </in>
+                                    > &emsp;<eq name="mod" value="6"><br/>&emsp;<hr/></eq>
+                                </volist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                中医症状
+                            </th>
+                            <td>
+                                <foreach name="data_tcm" item="v">
+                                    {$v['title']}
+                                    <input class="xb-icheck" type="checkbox" name="tcm_ids[]" value="{$v['id']}"
+                                    <in name="v['id']" value="$symptoms_data['tcm_id']">
+                                    checked="checked"
+                                    </in>
+                                    > &emsp;&emsp;
+                                </foreach>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                西医症状
+                            </th>
+                            <td>
+                                <foreach name="data_western" item="v">
+                                    {$v['title']}
+                                    <input class="xb-icheck" type="checkbox" name="western_ids[]" value="{$v['id']}"
+                                    <in name="v['id']" value="$symptoms_data['western_id']">
+                                    checked="checked"
+                                    </in>
+                                    > &emsp;&emsp;
+                                </foreach>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                视频医生
+                            </th>
+                            <td>
+                                <foreach name="data_doctors" item="v">
+                                    {$v['title']}
+                                    <input class="xb-icheck" type="checkbox" name="doctors_ids[]" value="{$v['id']}"
+                                    <in name="v['id']" value="$symptoms_data['doctors_id']">
+                                    checked="checked"
+                                    </in>
+                                    > &emsp;&emsp;
+                                </foreach>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                视频原因
+                            </th>
+                            <td>
+                                <foreach name="data_reason" item="v">
+                                    {$v['title']}
+                                    <input class="xb-icheck" type="checkbox" name="reason_ids[]" value="{$v['id']}"
+                                    <in name="v['id']" value="$symptoms_data['reason_id']">
+                                    checked="checked"
+                                    </in>
+                                    > &emsp;&emsp;
+                                </foreach>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                            </th>
+                            <td>
+                                <input class="btn btn-success" type="submit" value="修改">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="js">
+    <icheckjs color="blue" />
+</block>

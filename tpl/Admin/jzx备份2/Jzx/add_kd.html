@@ -1,0 +1,72 @@
+<html>
+    
+    <head>
+    </head>
+    
+    <body>
+        <extend name="Public:base" />
+        <block name="title">
+            添加订单
+        </block>
+        <block name="css">
+            <icheckcss />
+        </block>
+        <block name="content">
+            <div class="page-header">
+                <h1>
+                    <i class="fa fa-home">
+                    </i>
+                    首页 &gt; 订单管理 &gt; 添加快递信息
+                </h1>
+            </div>
+            <div class="col-xs-12">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myTab">
+                        <li>
+                            <a href="{:U('Admin/Jzx/index')}">
+                                订单列表
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="{:U('Admin/Jzx/add_case')}">
+                                添加订单
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <form class="form-inline" method="post">
+                            <table class="table table-striped table-bordered table-hover table-condensed">
+                                <tbody>
+                                    <tr>
+                                        <th class="center">
+                                           <!--  基本信息 -->
+                                        </th>
+                                        <td>
+                                            快递公司名称&nbsp;
+                                            <input class="input-medium" type="text" name="kd_gs" value="" /><br/><br/>
+                                            快递单号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <input class="input-medium" type="text" name="kd_num" value="" />
+                                           
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <td>
+                                            <input class="btn btn-success" type="submit" value="添加" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </block>
+        <block name="js">
+            <icheckjs color="blue" />
+        </block>
+    </body>
+
+</html>
